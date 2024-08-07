@@ -11,10 +11,15 @@
             display: flex;
             height: 100vh;
             overflow: hidden;
-            background: #282828; /* Fallback color */
-            background-image: url('https://path/to/your/background-image.jpg'); /* Use an actual URL to your background image */
-            background-size: cover;
-            background-attachment: fixed;
+            background: linear-gradient(135deg, #5aa9e6, #8fd3f4, #a6c1ee, #84fab0, #7ec9f5);
+            background-size: 300% 300%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .sidebar {
@@ -76,7 +81,7 @@
     </div>
     <div class="content">
         <h1>Welcome to the Silky Smooth Interface</h1>
-        <p>This is an example of a sidebar that adjusts its width and looks silky smooth, with a background inspired by the provided image.</p>
+        <p>This is an example of a sidebar that adjusts its width and looks silky smooth, with a gradient background inspired by the provided image.</p>
     </div>
 </body>
 </html>
